@@ -1,0 +1,26 @@
+{
+    "ip": "72.255.50.1",
+    "location": {
+        "country": "PK",
+        "region": "Sindh",
+        "city": "Sharfabad",
+        "lat": 24.88488,
+        "lng": 67.06627,
+        "postalCode": "",
+        "timezone": "+05:00",
+        "geonameId": 7046091
+    },
+    "as": {
+        "asn": 9541,
+        "name": "CYBERNET-AP",
+        "route": "72.255.50.0/24",
+        "domain": "https://www.cyber.net.pk",
+        "type": "NSP"
+    },
+    "isp": "Cyber Internet Services",
+    "proxy": {
+        "proxy": false,
+        "vpn": false,
+        "tor": false
+    }
+}
