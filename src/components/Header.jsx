@@ -10,7 +10,13 @@ const Header = ({handleClick,ip,setIp}) => {
           value={ip}
           onChange={(e)=>setIp(e.target.value)} />
           <button className='w-10 pl-3 bg-black h-14 rounded-r-2xl md:h-20 md:w-20 md:pl-7'><FaChevronRight className='md:w-7 md:h-7'
-          onClick={handleClick}/></button>
+          onClick={ ()=>{
+            if(!ip){
+              alert('Please enter a Ip Address');
+              return;
+            }
+            handleClick()
+          }}/></button>
         </div>
       </div>
     </div>

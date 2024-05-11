@@ -10,6 +10,10 @@ const App = () => {
 
   const handleClick=async()=>{
     const res=await fetch(`https://geo.ipify.org/api/v1?apiKey=${import.meta.env.VITE_API_KEY}&${ip}`);
+    if(!res.ok){
+      alert('Please enter a valid IP address');
+      return;
+    }
     const data=await res.json();
     setData(data);
   };
@@ -22,6 +26,7 @@ const App = () => {
       <div className=''>
         <Map data={data}/>
       </div>
+    
     </div>
   )
 }
